@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{663FFA48-77C8-438F-AFA4-EF29003E455B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VideoStoreProject.My.MyApplication</StartupObject>
+    <RootNamespace>VideoStoreProject</RootNamespace>
+    <AssemblyName>VideoStoreProject</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VideoStoreProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VideoStoreProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientCreate.Designer.vb">
+      <DependentUpon>ClientCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.vb" />
+    <Compile Include="ClientList.Designer.vb">
+      <DependentUpon>ClientList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBManager.vb" />
+    <Compile Include="EmployeeCreate2.Designer.vb">
+      <DependentUpon>EmployeeCreate2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeCreate2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeCreate1.Designer.vb">
+      <DependentUpon>EmployeeCreate1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeCreate1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientDelete.Designer.vb">
+      <DependentUpon>ClientDelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDelete.Designer.vb">
+      <DependentUpon>EmployeeDelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientEdit.Designer.vb">
+      <DependentUpon>ClientEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeEdit.Designer.vb">
+      <DependentUpon>EmployeeEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeList.Designer.vb">
+      <DependentUpon>EmployeeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeLogin.vb" />
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PasswordEdit.Designer.vb">
+      <DependentUpon>PasswordEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchAdvanced.Designer.vb">
+      <DependentUpon>SearchAdvanced.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchAdvanced.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchClass.vb" />
+    <Compile Include="SearchQuick.Designer.vb">
+      <DependentUpon>SearchQuick.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchQuick.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.vb" />
+    <Compile Include="User.vb" />
+    <Compile Include="Video.vb" />
+    <Compile Include="VideoCreate.Designer.vb">
+      <DependentUpon>VideoCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VideoCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoDelete.Designer.vb">
+      <DependentUpon>VideoDelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VideoDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoEdit.Designer.vb">
+      <DependentUpon>VideoEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VideoEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoList.Designer.vb">
+      <DependentUpon>VideoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VideoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoRent.Designer.vb">
+      <DependentUpon>VideoRent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VideoRent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoReturn.Designer.vb">
+      <DependentUpon>VideoReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VideoReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClientCreate.resx">
+      <DependentUpon>ClientCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientList.resx">
+      <DependentUpon>ClientList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeCreate2.resx">
+      <DependentUpon>EmployeeCreate2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeCreate1.resx">
+      <DependentUpon>EmployeeCreate1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientDelete.resx">
+      <DependentUpon>ClientDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDelete.resx">
+      <DependentUpon>EmployeeDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientEdit.resx">
+      <DependentUpon>ClientEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeEdit.resx">
+      <DependentUpon>EmployeeEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeList.resx">
+      <DependentUpon>EmployeeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordEdit.resx">
+      <DependentUpon>PasswordEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchAdvanced.resx">
+      <DependentUpon>SearchAdvanced.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchQuick.resx">
+      <DependentUpon>SearchQuick.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoCreate.resx">
+      <DependentUpon>VideoCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoDelete.resx">
+      <DependentUpon>VideoDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoEdit.resx">
+      <DependentUpon>VideoEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoList.resx">
+      <DependentUpon>VideoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoRent.resx">
+      <DependentUpon>VideoRent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoReturn.resx">
+      <DependentUpon>VideoReturn.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
