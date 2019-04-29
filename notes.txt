@@ -1,0 +1,73 @@
+IMPROVEMENTS:
+1) Move all lists to dashboard!!! (change labels if)
+2) Quick/Advanced to dashboard???
+
+client edit: Make province (ON) = to Ontario
+client delete: line 134 / make it so I delete with user id instead of client numb
+
+1) Access levels
+active account	
+
+URGENT!!!
+
+10/20...
+
+doesn't match row count...
+
+DB manager / EmployeeCreate
+
+Gotta make it so it matches the row count!!!
+
+
+1) Create VideoList.vb
+2) Create EmployeeList.vb
+
+when.show() = true then
+close form
+
+USE CASE ONE:
+
+1) use md5 and make password ****
+
+Dashboard:
+
+1) Button 1 then listbox1
+Button 2 then listbox2
+Button 3 then listbox3
+
+or is there another way?
+
+Create Client:
+
+1)Add labels 
+
+if typeOfCard.text.length >= 1 then
+	LBL_typeOfCard.enabled
+	LBL_cardNumber.enabled
+	LBL_expirationDate.enabled
+
+*make the asteriks visible if the typeOfCard is written into
+*Remove when it's blank.
+
+2)Toolbox -> Help providor on credit information
+  ToolBox -> Error provider
+
+3)Make clients credit card "****-****-****-4883" when on edit or delete so that
+data isn't released to admin/employee.
+
+4)Enabled = false on CreateDelete
+
+5) Client number auto generated?  Random?
+
+6) Timer for auto signout when no clicks/no mouse movements
+
+7) TB_age.text = TB_dob.text (year, month, day) - datetime.now
+(Auto set age when dob is set)
+
+Delete Client:
+
+8)Remove asteriks?
+
+Delete Employee:
+
+1) Active/Inactive employees,  just enable = false	
